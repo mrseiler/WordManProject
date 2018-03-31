@@ -10,19 +10,31 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class Main extends Application implements EventHandler<ActionEvent> {
+public class Main extends Application {
+
+    Button startButton = new Button();
 
     public static void main(String[] args) {
         launch(args);
+        WordMan wordman = new WordMan();
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Word Man");
-        Button startButton = new Button();
         startButton.setText("Start");
 
-        startButton.setOnAction(this);
+        startButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override public void handle(ActionEvent event) {
+                StackPane gameLayout = new StackPane();
+                if (event.getSource() == startButton) {
+                    Scene game = new Scene(gameLayout, 800, 800);
+
+
+                }
+            }
+        });
+
 
         StackPane layout = new StackPane();
         layout.getChildren().add(startButton);
@@ -31,9 +43,6 @@ public class Main extends Application implements EventHandler<ActionEvent> {
         primaryStage.show();
     }
 
-    @Override
-    public void handle(ActionEvent event) {
 
-    }
 
 }
