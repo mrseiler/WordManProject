@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import java.util.Scanner;
+import java.io.*;
 
 public class Main extends Application {
 
@@ -17,6 +19,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+
         final int guessesLeft = 10;
         String word = "test";
         WordMan wordman = new WordMan();
