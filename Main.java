@@ -14,9 +14,13 @@ public class Main extends Application {
 
     Button startButton = new Button();
 
+
     public static void main(String[] args) {
         launch(args);
+        final int guessesLeft = 10;
+        String word = "test";
         WordMan wordman = new WordMan();
+        wordman.guess(word, guessesLeft);
     }
 
     @Override
