@@ -9,23 +9,23 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import java.util.Scanner;
 import java.io.*;
 
-public class Main extends Application {
+public class Main{
 
     Button startButton = new Button();
 
-
     public static void main(String[] args) {
-        launch(args);
+        //launch(args);
 
-        final int guessesLeft = 10;
-        String word = "test";
         WordMan wordman = new WordMan();
-        wordman.guess(word, guessesLeft);
-    }
+        wordman.createMap();
+        wordman.play();
 
+
+
+    }
+    /*
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Word Man");
@@ -48,7 +48,7 @@ public class Main extends Application {
         Scene scene = new Scene(layout, 300, 275);
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
+    } */
 
 
 
