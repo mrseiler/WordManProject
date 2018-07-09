@@ -1,7 +1,7 @@
 # Word Man: Final Project
 Developed By: Kelsie Edwards, Alison McMullen, Samuel Rader, and Mason Seiler
 
-This project solves the issues of jew vocabulary words being hard to learn. This project challenges the user to learn new words and their meanings while simutaneously having fun.
+This project solves the issues of few vocabulary words being hard to learn. This project challenges the user to learn new words and their meanings while simutaneously having fun.
 
 # Features Include
 
