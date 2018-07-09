@@ -1,5 +1,5 @@
 # Word Man: Final Project
-Developed By: Kelsie Edwards, Alison McMullen, Samuel Rader, and Mason Seiler
+Developed By: Mason Seiler & Allison McMullen
 
 This project solves the issues of few vocabulary words being hard to learn. This project challenges the user to learn new words and their meanings while simutaneously having fun.
 
